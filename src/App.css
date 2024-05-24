@@ -7,26 +7,12 @@
 body {
   font-family: Arial, Halvetica, sans-serif;
   line-height: 1.4;
+
+  background-color: #1c1c2b;
+  color: #ffffff;
 }
 
 a {
   color: #333;
   text-decoration: none;
-}
-
-.container {
-  padding: 0 1rem;
-}
-
-.btn {
-  display: inline-block;
-  border: none;
-  background: #555;
-  color: #fff;
-  padding: 7px 20px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #666;
 }

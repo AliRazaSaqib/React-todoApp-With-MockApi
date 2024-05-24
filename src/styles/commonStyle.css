@@ -1,0 +1,81 @@
+.app {
+  padding: 1rem;
+}
+
+.add-todo-form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.add-todo-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.add-todo-button {
+  padding: 0.5rem 1rem;
+  background-color: #ff3d00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.add-todo-button:hover {
+  background-color: #ff3d00;
+}
+
+.error {
+  color: red;
+  padding: 1rem;
+}
+
+.loading-container {
+  width: 100%;
+  margin: auto;
+  padding: 2rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #ff3d00;
+  width: 6px;
+  height: 6px;
+  transform: translate(150%, 150%);
+  border-radius: 50%;
+}
+.loader::before {
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  transform: translate(-150%, -150%);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
